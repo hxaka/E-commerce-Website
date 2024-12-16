@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<head lang="en">
+
+    <head>
+        <title>
+            Cart Page
+        </title>
+    </head>
+    <link rel="stylesheet"
+    type="text/css"
+    href="/css/cart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/contenthide.js"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script> -->
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---Google Fonts-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section of the body-->
+    <header>
+        <section class="header_cancel">
+        <p class="cancel_head"> Sign up and get 20% off for your first order. Sign Up Now
+            <button class="close"><i class="fa">&#xf00d;</i></button>
+        </p>
+    </section>
+        <!-- <p class="close" style="color: black;">x</p> -->
+    </header>
+
+
+    <!-- Navigation Bar -->
+   
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg bg-body-white">
+<section class="container-fluid">
+    <a class="navbar-brand"
+       href="home.html"><strong>SHOP.CO</strong></a>
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <!---  <p class="navbar-toggler-icon"></p> -->
+    </button>
+
+    <section class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                   href="#"
+                   role="button"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="true">
+                    Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"    href="product_detail.html">Products</a></li>
+                    <li><a class="dropdown-item"
+                           href="category.html">Categories</a></li>
+                    <!-- <li>
+                        <hr class="dropdown-sectionider">
+                    </li> -->
+                   
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#">On Sale</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#">Brands</a>
+            </li>
+            <li class="nav-item">
+                <form class="d-inline-flex"
+                      role="search">
+                      <i class="fa-solid fa-magnifying-glass"></i>   
+                    <input class="form-control me-2"
+                           type="search"
+                           placeholder="Search for products..."
+                           aria-label="Search">
+                </form>
+            </li>
+            <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+            <li class="nav-item1">
+                <a class="nav-link"
+                   href="cart.html"><i class="fa-solid fa-shopping-cart"></i></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="#"><i class="fa-regular fa-user"></i></a>
+            </li>
+        </ul>
+        <!--</ul>-->
+    </section>
+</section>
+</nav>
+
+    <hr style="margin-left: 120px;width: 80%; margin-top: auto;">
+<main>
+    <section class="cart_info">
+        <p class="chead">Home > Cart</p>
+        <h1>YOUR CART</h1>
+        <section class="main_cart_info">
+            <section class="cart_products">
+                <section class="first_product">
+                    <figure>
+                        <img src="/img/graphictshirt.png"
+                             alt="A graphic designed t-shirt">
+                        <figcaption>
+                            <p class="pname">Gradient Graphic T-shirt <i class="fa-solid fa-trash-can"></i></p>
+                            <p>Size: Large</p>
+                            <p>Color: White</p>
+                            <p class="price">$145</p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <hr style="margin-left: 0px; margin-right: auto;">
+
+                <section class="second_product">
+                    <figure>
+                        <img src="/img/checks.png"
+                             alt="A checks shirt">
+                        <figcaption>
+                            <p class="pname">Checkered Shirt<i class="fa-solid fa-trash-can"></i></p>
+                            <p>Size: Medium</p>
+                            <p>Color: Red</p>
+                            <p class="price">$180</p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <hr style="margin-left: 0px; margin-right: auto;">
+
+                <section class="third_product">
+                    <figure>
+                        <img src="/img/skinjeans.png">
+                        <figcaption>
+                            <p class="pname">Skinny Fit Jeans<i class="fa-solid fa-trash-can"></i></p>
+                            <p>Size: Large</p>
+                            <p>Color: Blue</p>
+                            <p class="price">$240</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+
+            <section class="order_summary">
+                <p class="order_head">Order Summary</p>
+                <p class="order_sub">Subtotal <em class="subtotal">$565</em></p>
+                <p class="order_sub">Discount(-20%) <em class="discount">-$113</em></p>
+                <p class="order_sub">Delivery Fee <em class="delivery">$15</em></p>
+                <hr style="width: 350px; margin: auto;">
+                <p class="total">Total <em class="total">$467</em></p>
+                <p class="buttons">
+                    <i class="fa-solid fa-tag"></i>
+                 <input type="text"
+                           placeholder="Add promo code"> 
+                    <button class="apply"
+                            value="round">Apply</button>
+                </p>
+                <p class="checkout"><button class="checkout">Go to Checkout <i class="fa-solid fa-arrow-right"></i></button></p>
+            </section>
+        </section>
+    </section>
+
+    <!-- Stay upto date -->
+    <section class="uptodate">
+        <section class="grid-container">
+            <section class="grdate_1">
+                <p>Stay upto date about our latest offers.</p>
+            </section>
+
+            <section class="grdate_2">
+                <section class="box">
+                    <p class="fa-regular fa-envelope"></p>
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Enter your email address">
+                    <button type="button">Subscribe to Newsletter</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+    <!-- Before Footer Part -->
+    <section class="footer_grid"
+             style="background-color: #f2f0f1;">
+        <section class="grid-container">
+            <section class="grid-item">
+                <p id="first_column">SHOP.CO</p>
+                <p id="first_column_subheading">
+                    We have clothes that suits your style and <br>
+                    which you're proud to wear from <br>
+                    women to men.</p>
+                <br>
+                <i class="fa-brands fa-twitter">&nbsp;</i>
+                <i class="fa-brands fa-instagram">&nbsp;</i>
+                <i class="fa-brands fa-facebook">&nbsp;</i>
+                <i class="fa-brands fa-github">&nbsp;</i>
+            </section>
+
+            <section class="grid-item2">
+                <p><strong>Company</strong></p>
+                <p class="subs">About</p>
+                <p class="subs">Features</p>
+                <p class="subs">Work</p>
+                <p class="subs">Career</p>
+            </section>
+
+            <section class="grd-item3">
+                <p><strong>Help</strong></p>
+                <p class="subs">Customer Support</p>
+                <p class="subs">Delivery Details</p>
+                <p class="subs">Terms & Conditions</p>
+                <p class="subs">Privacy & Policy</p>
+            </section>
+
+            <section class="grd-item4">
+                <p><strong>FAQ</strong></p>
+                <p class="subs">Account</p>
+                <p class="subs">Manage Deliveries</p>
+                <p class="subs">Orders</p>
+                <p class="subs">Payments</p>
+            </section>
+
+            <section class="grd-item5">
+                <p><strong>Resources</strong></p>
+                <p class="subs">Free ebooks</p>
+                <p class="subs">Development Tutorial</p>
+                <p class="subs">How to - Blog</p>
+                <p class="subs">Youtube Playlist</p>
+            </section>
+        </section>
+        <br>
+        <hr style="margin-left: auto; margin-right: auto; width: 1200px;">
+    </section>
+    </main>
+
+    <!-- Footer of the page -->
+    <footer>
+        <p class="trademarks">Shop.co @2020-2023. All Rights Reserved.</p>
+        <p class="brands">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+        </p>
+    </footer>
+</body>
+</html>
