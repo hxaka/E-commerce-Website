@@ -12,17 +12,227 @@ body {
   background-color: #f2f0f1;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header p.cancel_head {
+  background-color: black;
+  color: white;
+  text-align: center;
+  max-width: auto;
+  height: 30px;
+  display: block;
+}
+header p.cancel_head button.close {
+  color: white;
+  background-color: #000;
+  border-color: #000;
+  border-style: hidden;
+  padding-top: 0px;
+}
+header p.cancel_head p i.fa {
+  margin-left: 5px;
+}
+
+nav.navbar {
+  word-spacing: 15px;
+  background-color: white;
+  width: 100%;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li.nav-item1 i.fa-solid {
+  padding-top: 9px;
+}
+
+li.nav-item a.nav-link {
+  font-family: var(--font-name);
+  padding-top: 5px;
+}
+li.nav-item i.fa-solid {
+  position: absolute;
+  padding-top: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+  font-size: 14px;
+}
+li.nav-item form.d-inline-flex {
+  width: 600px;
+}
+li.nav-item form.d-inline-flex input.form-control {
+  border-radius: 30px;
+}
+li.nav-item form.d-inline-flex input::placeholder {
+  font-size: 14px;
+  align-items: center;
+  font-family: var(--font-name);
+  padding-left: 30px;
+}
+
+.container-fluid li a {
+  color: black;
+  word-spacing: normal;
+  display: inline-block;
+  padding-top: 0px;
+  width: 100%;
+}
+
+.container-fluid a.navbar-brand {
+  font-weight: bold;
+  margin-left: 100px;
+  font-family: "Raleway";
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.uptodate {
+  margin-left: 160px;
+  margin-top: 40px;
+  width: 1000px;
+  border-radius: 30px;
+  align-items: center;
+  background-color: black;
+  font-family: "Raleway", serif;
+}
+.uptodate .grid-container {
+  color: white;
+  grid-template-columns: 420px 100px;
+  display: grid;
+  column-gap: 300px;
+  width: 100px;
+  border-radius: 5000px;
+  align-items: center;
+}
+.uptodate .grid-container .grdate_1 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 70px;
+  text-transform: uppercase;
+  height: 150px;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+.uptodate .grid-container .grdate_2 {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.uptodate .grid-container .grdate_2 .box p.fa-regular {
+  position: absolute;
+  color: #000;
+  align-items: baseline;
+  padding-top: 13px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.uptodate .grid-container .grdate_2 .box input.form-control {
+  border-radius: 4000px;
+  width: 250px;
+}
+.uptodate .grid-container .grdate_2 .box input::placeholder {
+  font-size: 14px;
+  align-items: center;
+  font-family: var(--font-name);
+  padding-left: 20px;
+}
+.uptodate .grid-container .grdate_2 .box button {
+  margin-top: 10px;
+  border-radius: 4000px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  background-color: white;
+  font-family: var(--font-name);
+}
+
+.footer_grid {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: var(--bg-color);
+}
+.footer_grid .grid-container {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 270px 230px 230px 230px 200px;
+  column-gap: 1px;
+  text-align: left;
+  margin-left: 120px;
+  padding-top: 0px;
+}
+.footer_grid p#first_column {
+  text-align: left;
+  font-family: "Raleway";
+  line-height: 30px;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.footer_grid #first_column_subheading {
+  text-align: left;
+  font-size: 13px;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  text-wrap: wrap;
+  line-height: 15px;
+  justify-content: space-evenly;
+  font-family: var(--font-name);
+}
+.footer_grid p strong {
+  font-family: var(--font-name);
+  margin-left: 80px;
+}
+.footer_grid .subs {
+  margin-left: 80px;
+  font-size: 14px;
+  font-family: var(--font-name);
+}
+
+footer {
+  background-color: #f2f0f1;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 20px;
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 100px;
+}
+footer p.trademarks {
+  margin-left: 30px;
+}
+footer p.brands {
+  margin-left: 580px;
+  font-size: 20px;
+}
+
 .main-part {
   display: grid;
-  grid-template-columns: 40rem 20rem;
+  grid-template-columns: 600px auto;
   background-color: var(--bg-color);
   height: 45.75rem;
   padding-bottom: 0rem;
+  max-width: 100%;
+  width: 88%;
 }
 .main-part img {
   margin-left: 10rem;
-  width: fit-content;
+  max-width: 100%;
   height: 45.75rem;
+  width: 100%;
 }
 .main-part p.first_line {
   font-family: "Raleway";
@@ -412,16 +622,912 @@ section.viewall button {
   border-radius: 40px;
 }
 
+.cart_info {
+  width: auto;
+}
+.cart_info p.chead {
+  font-family: "Mulish", serif;
+  margin-left: 120px;
+}
+.cart_info h1 {
+  font-family: "Raleway", serif;
+  margin-left: 120px;
+}
+.cart_info .main_cart_info {
+  display: grid;
+  grid-template-columns: 750px 400px;
+  gap: 15px;
+  margin-left: 50px;
+}
+.cart_info .cart_products {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  border-style: groove;
+  border-width: 1px;
+  margin-top: 30px;
+  margin-left: 3rem;
+  font-family: "Mulish", serif;
+  height: fit-content;
+}
+.cart_info .cart_products i.fa-solid {
+  padding-left: 420px;
+  color: red;
+}
+.cart_info .cart_products img {
+  height: 124px;
+  width: 120px;
+  border-radius: 10px;
+}
+.cart_info .cart_products figure {
+  display: grid;
+  grid-template-columns: 130px 200px;
+  width: 700px;
+}
+.cart_info .cart_products figcaption {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 12px;
+}
+.cart_info .cart_products figcaption p.pname {
+  font-weight: bold;
+  font-size: 15px;
+}
+.cart_info .cart_products figcaption p.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.cart_info .order_summary {
+  height: fit-content;
+  padding: 20px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  border-style: groove;
+  border-width: 1px;
+  width: 400px;
+  align-items: stretch;
+}
+.cart_info .order_summary p.order_head {
+  font-weight: bold;
+  font-family: "Mulish", serif;
+  font-size: 20px;
+}
+.cart_info .order_summary p.subtotal {
+  font-size: 18px;
+  font-family: "Mulish", serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.cart_info .order_summary p.total {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Mulish", serif;
+}
+.cart_info .order_summary p.total em.total {
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 140px;
+}
+.cart_info .order_summary p.order_sub em.subtotal {
+  font-style: normal;
+  margin-left: 130px;
+}
+.cart_info .order_summary p.order_sub em.discount {
+  font-style: normal;
+  color: red;
+  margin-left: 75px;
+}
+.cart_info .order_summary p.order_sub em.delivery {
+  font-style: normal;
+  margin-left: 110px;
+}
+.cart_info .order_summary p.buttons input {
+  height: 40px;
+  width: 270px;
+  border-radius: 20px;
+  border-style: groove;
+  border-color: #F0F0F0;
+  background-color: #F0F0F0;
+}
+.cart_info .order_summary p.buttons i.fa-solid {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.cart_info .order_summary p.buttons ::placeholder {
+  text-align: center;
+  margin-left: 20px;
+}
+.cart_info .order_summary p.buttons button.apply {
+  border-radius: 20px;
+  width: 22%;
+  height: 40px;
+  border-style: groove;
+  border-width: thin;
+  text-align: center;
+  border-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
+  color: white;
+}
+.cart_info .order_summary p.checkout button.checkout {
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: thin;
+  text-align: center;
+  border-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
+  color: white;
+}
+
+.small_section {
+  margin-top: 50px;
+}
+.small_section h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+.small_section .img1 {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+.clothes {
+  margin-top: 20px;
+  height: 600px;
+}
+.clothes p.hsmt {
+  padding-left: 130px;
+  font-family: "Mulish", serif;
+}
+.clothes .clothes_info {
+  display: grid;
+  grid-template-columns: 170px 430px 550px;
+  margin-left: 100px;
+  margin-right: 100px;
+  white-space: none;
+}
+.clothes .clothes_info .image_details {
+  height: 600px;
+}
+.clothes .clothes_info .image_details p.fa {
+  color: orange;
+}
+.clothes .clothes_info .image_details p.fa em {
+  color: black;
+  font-style: normal;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.clothes .clothes_info .image_details p.shirt_title {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Raleway", serif;
+  text-transform: uppercase;
+}
+.clothes .clothes_info .image_details p.price_shirt {
+  font-size: 30px;
+  font-weight: bold;
+}
+.clothes .clothes_info .image_details p.price_shirt s {
+  color: #c2baba;
+}
+.clothes .clothes_info .image_details p.price_shirt label {
+  font-size: 15px;
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  color: red;
+  border-radius: 20px;
+  border-style: groove;
+  border-top: white;
+  border-width: 1px;
+  width: 50px;
+  height: fit-content;
+  text-align: center;
+}
+.clothes .clothes_info .image_details p.subhead_shirt {
+  font-size: 15px;
+  font-family: "Mulish", serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.clothes .clothes_info .image_details .colors {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.clothes .clothes_info .image_details .colors .olive {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #4F4631;
+}
+.clothes .clothes_info .image_details .colors .green {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #314F4A;
+}
+.clothes .clothes_info .image_details .colors .blue {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #31344F;
+}
+.clothes .clothes_info button.sizes {
+  width: 100px;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: thin;
+  height: 35px;
+  background-color: #F0F0F0;
+  color: rgba(0, 0, 0, 0.6);
+  border-color: #F0F0F0;
+  text-align: center;
+}
+.clothes .clothes_info .addmore_cart {
+  padding-top: 0%;
+  display: flex;
+  gap: 10px;
+}
+.clothes .clothes_info .addmore_cart button.addmore {
+  width: 100px;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: thin;
+  height: 40px;
+  background-color: #F0F0F0;
+  color: rgba(0, 0, 0, 0.6);
+  border-color: #F0F0F0;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.clothes .clothes_info .addmore_cart button.cart {
+  padding-right: 40px;
+  width: 700px;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: thin;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-color: #F0F0F0;
+}
+.clothes .smaller_image figure.tshirt_img img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 140px;
+  height: 165px;
+}
+.clothes .bigger_image figure.big_tshirt img {
+  width: 350px;
+  height: 530px;
+  border-radius: 10px;
+}
+
+.product_ratings_faq {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  align-items: center;
+}
+.product_ratings_faq button.more {
+  margin-top: 20px;
+  margin-left: 40%;
+  border-radius: 50px;
+  font-size: 16px;
+  border-style: groove;
+  border-width: thin;
+  text-align: center;
+  color: black;
+  background-color: white;
+  width: 250px;
+  height: 40px;
+}
+.product_ratings_faq .heading_tabs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.product_ratings_faq .heading_tabs p {
+  font-family: "Mulish", serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: normal;
+}
+.product_ratings_faq .sub_heading {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto auto;
+  margin-left: 120px;
+}
+.product_ratings_faq .sub_heading i.fa-solid {
+  border-radius: 400px;
+  font-size: 18px;
+  rotate: 90deg;
+  width: 40px;
+  height: 40px;
+  margin-left: 140px;
+  background-color: #F0F0F0;
+  text-align: center;
+  align-content: center;
+  border-color: #31344F;
+}
+.product_ratings_faq .sub_heading button.btn {
+  border-style: groove;
+  width: 100px;
+  background-color: #F0F0F0;
+  border-radius: 50px;
+  height: 50px;
+}
+.product_ratings_faq .sub_heading button.review_btn {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border-style: groove;
+  text-align: center;
+  width: 150px;
+  border: #000;
+  height: 50px;
+}
+.product_ratings_faq .sub_heading .sub_heading_small p.review_heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+.product_ratings_faq .sub_heading .sub_heading_small p.review_heading em {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.product_ratings_faq .reviews {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-left: 25px;
+  gap: 50px;
+}
+.product_ratings_faq .reviews p.customer_name {
+  padding-left: 14px;
+  font-size: 20px;
+  font-family: "Mulish", serif;
+  font-weight: bold;
+}
+.product_ratings_faq .reviews p.customer_review {
+  padding-left: 14px;
+  font-size: 15px;
+  font-family: "Mulish", serif;
+  line-height: 25px;
+}
+.product_ratings_faq .reviews p.dateofreview {
+  padding-left: 14px;
+  font-size: 15px;
+  font-family: "Mulish", serif;
+}
+.product_ratings_faq .reviews p.fa {
+  padding-left: 10px;
+  font-size: 10px;
+  color: orange;
+}
+.product_ratings_faq .reviews .grid-1 {
+  border: 1px solid #c2baba;
+  border-radius: 31px;
+}
+.product_ratings_faq .reviews .grid-2 {
+  border: 1px solid #c2baba;
+  border-radius: 31px;
+}
+.product_ratings_faq .reviews .grid-3 {
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 31px;
+  border: 1px solid #c2baba;
+}
+
+.youmightlike {
+  margin-left: 70px;
+}
+.youmightlike p.heading {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Raleway", serif;
+  text-align: center;
+}
+.youmightlike .moreclothesimages {
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.youmightlike .moreclothesimages img {
+  width: 220px;
+  margin-left: 100px;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+  display: flex;
+  height: 250px;
+  grid-template-columns: 100px 100px 100px 100px;
+  justify-content: space-evenly;
+}
+.youmightlike .moreclothesimages figure {
+  display: inline-block;
+  grid-template-columns: 100px 100px 100px 100px;
+  width: 230px;
+}
+.youmightlike .moreclothesimages figcaption {
+  margin-left: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  width: 230px;
+  font-family: "Mulish", serif;
+}
+.youmightlike .moreclothesimages figcaption p.fa {
+  color: orange;
+}
+
+.small_section {
+  margin-top: 50px;
+}
+.small_section h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+.small_section .img1 {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+.categories {
+  margin-left: 5px;
+  padding-right: 10rem;
+}
+.categories .heading_direction {
+  display: inline-flex;
+  margin-top: 10px;
+}
+.categories .heading_direction .category_head {
+  margin-left: 120px;
+  font-size: 13px;
+  font-family: "Mulish", serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.categories .heading_direction .category_head_next {
+  font-size: 13px;
+  color: black;
+  font-family: "Mulish", serif;
+  margin-left: 5px;
+}
+.categories .maincontent {
+  margin-left: 120px;
+  display: flex;
+}
+.categories .maincontent .filters {
+  width: 200px;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  border-style: groove;
+  border-width: 1px;
+  text-align: center;
+  height: 1030px;
+}
+.categories .maincontent .filters p.section_heading_first {
+  font-weight: bold;
+  padding-top: 20px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding-left: 5px;
+  font-family: "Mulish", serif;
+}
+.categories .maincontent .filters p.section_heading_first i.fa-solid {
+  padding-right: 5px;
+  padding-left: 4px;
+  rotate: 90deg;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.categories .maincontent .filters p.section_heading {
+  font-weight: bold;
+  padding-top: 0px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding-left: 5px;
+  font-family: "Mulish", serif;
+}
+.categories .maincontent .filters p.section_heading i.fa-solid {
+  padding-right: 5px;
+  padding-left: 4px;
+  rotate: 90deg;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.categories .maincontent .filters p.sub_heading_section {
+  text-align: left;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: "Mulish", serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+.categories .maincontent .filters p.sub_heading_section i.fa-solid {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.categories .maincontent .filters input.min {
+  background-color: black;
+}
+.categories .maincontent .filters input.max {
+  background-color: black;
+}
+.categories .maincontent .filters .colors {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 25px 25px 25px 25px 25px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: space-evenly;
+}
+.categories .maincontent .filters .colors .green_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #00C12B;
+}
+.categories .maincontent .filters .colors .red_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #F50606;
+}
+.categories .maincontent .filters .colors .yellow_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #F5DD06;
+}
+.categories .maincontent .filters .colors .orange_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #F57906;
+}
+.categories .maincontent .filters .colors .lightblue_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #06CAF5;
+}
+.categories .maincontent .filters .colors .purple_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #7D06F5;
+}
+.categories .maincontent .filters .colors .pink_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #F506A4;
+}
+.categories .maincontent .filters .colors .white_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.categories .maincontent .filters .colors .black_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #000000;
+}
+.categories .maincontent .filters .colors .blue_color {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #063AF5;
+}
+.categories .maincontent .filters .sizes_filter {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+}
+.categories .maincontent .filters .sizes_filter button.sizes {
+  font-size: 13px;
+  border-radius: 20px;
+  border-style: groove;
+  font-family: "Mulish", serif;
+  width: 90px;
+  height: 33px;
+  background-color: #F0F0F0;
+  border: 1px solid #F0F0F0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.categories .maincontent .filters button.btn_apply {
+  width: 180px;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+  border-style: groove;
+  background-color: #000000;
+  border: 1px solid black;
+  font-size: 15px;
+  font-family: "Mulish", serif;
+  letter-spacing: 1px;
+}
+.categories .maincontent .diff_clothes {
+  margin-left: 100px;
+}
+.categories .maincontent .diff_clothes .toptext {
+  display: flex;
+  justify-content: stretch;
+  align-content: space-evenly;
+  font-family: "Mulish", serif;
+}
+.categories .maincontent .diff_clothes .toptext p.pro_head {
+  font-weight: bold;
+  font-size: 20px;
+}
+.categories .maincontent .diff_clothes .toptext p.showing {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 50%;
+}
+.categories .maincontent .diff_clothes .toptext p.sort {
+  font-size: 12px;
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.categories .maincontent .diff_clothes .toptext p.mp {
+  font-size: 12px;
+  color: #000000;
+  margin-left: 5px;
+}
+.categories .maincontent .diff_clothes .toptext p.mp i.fa-solid {
+  padding-left: 1px;
+  font-size: 10px;
+}
+.categories .maincontent .diff_clothes .products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  margin-left: 0px;
+}
+.categories .maincontent .diff_clothes .products img {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+.categories .maincontent .diff_clothes .products .products_images figure {
+  display: flex;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption {
+  line-height: 1px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption label {
+  font-size: 13px;
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  color: red;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 51, 51, 0.1019607843);
+  border-style: groove;
+  border-width: 1px;
+  width: 50px;
+  height: 17px;
+  text-align: center;
+  padding-left: 3px;
+  margin-left: 8px;
+  line-height: 13px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption s {
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 10px;
+  font-size: 19px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption em {
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 10px;
+  padding-left: 5px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption p.p_name {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Mulish", serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption p.fa {
+  color: #FFC633;
+  font-size: 12px;
+}
+.categories .maincontent .diff_clothes .products .products_images figcaption p.p_price {
+  font-weight: bold;
+  font-family: "Mulish", serif;
+  font-size: 19px;
+}
+.categories .maincontent .diff_clothes .pages {
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+.categories .maincontent .diff_clothes .pages button.previous {
+  width: 100px;
+  margin-right: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+}
+.categories .maincontent .diff_clothes .pages button.next {
+  width: 100px;
+  margin-left: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+}
+.categories .maincontent .diff_clothes .pages button.page_number {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.small_section {
+  margin-top: 50px;
+}
+.small_section h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+.small_section .img1 {
+  max-height: 300px;
+  max-width: 400px;
+}
+
 @media (max-width: 600px) {
   .main-part {
     width: 100%;
     background-color: #f2f0f1;
+    max-width: 100%;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 100px 500px;
+  }
+  .main-part img {
+    padding-top: 20px;
+    height: 500px;
+    width: 200px;
+  }
+  .main-part p.first_line {
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: 2rem;
+    padding-left: 10px;
+  }
+  .main-part p.second_line {
+    font-size: 0.9rem;
+    display: flexbox;
+    line-height: 2;
+    padding-left: 10px;
+    width: 200px;
+  }
+  .main-part button.btn {
+    margin-left: 10px;
+    width: 100px;
+    font-size: 0.8rem;
   }
   .grid-container1 {
     width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-left: 10px;
+    width: 50px;
+  }
+  .grid-container1 p.strong_cases {
+    font-size: 15px;
+  }
+  .grid-container1 p.sub_cases {
+    font-size: 10px;
+  }
+  #brandings {
+    background-color: black;
+    display: flex;
+    margin-top: 0px;
+  }
+  #brandings td {
+    column-gap: 0.2px;
+    padding-left: 0rem;
+    word-spacing: 1px;
+    font-size: 12px;
   }
   .pictures {
     width: 100%;
+  }
+  .pictures .newarrivalsimg, .pictures .topsellingimg {
+    display: block;
+  }
+  .pictures img {
+    width: 10rem;
+    height: 13rem;
+    margin-left: 1rem;
+  }
+  .pictures figcaption {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .pictures figcaption p.fa {
+    font-size: 0.9rem;
+  }
+  .pictures figcaption s {
+    margin-left: 0.5rem;
+  }
+  .viewall .btn {
+    margin-left: 1rem;
+  }
+  .viewall button {
+    width: 100%;
+  }
+  .extras {
+    font-family: "Raleway", serif;
+    line-height: 70px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-left: 4rem;
+    text-align: justify;
   }
   td {
     width: 100%;
@@ -435,15 +1541,6 @@ section.viewall button {
   #brandings {
     width: 100%;
   }
-  .extras {
-    width: 100%;
-  }
-  .pictures {
-    width: 100%;
-  }
-  .viewall {
-    width: 100%;
-  }
   .small_section {
     width: 100%;
   }
@@ -452,12 +1549,432 @@ section.viewall button {
   }
   .happy_customers .header_part h1 {
     width: 100%;
+    line-height: 50px;
+    font-size: 2rem;
+  }
+  .happy_customers .grid-1 p.fa {
+    font-size: 6px;
   }
   .browse {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    width: 450px;
+    column-gap: 50px;
+    margin-left: 50px;
+  }
+  .browse .casual {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .browse .casual figure.casual_img img {
+    width: 200px;
+    object-fit: cover;
+    left: 50px;
+  }
+  .browse .formal {
+    margin-left: 10px;
+    width: 150px;
+    float: left;
+  }
+  .browse .formal figure.formal_img img {
+    width: 480px;
+    object-fit: cover;
+    left: 10px;
+  }
+  .browse .party {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .browse .party figure.party_img img {
+    width: 320px;
+    object-fit: cover;
+    left: 10px;
+  }
+  .browse .gym {
+    margin-left: 10px;
+    width: 150px;
+    float: left;
+  }
+  .browse .gym figure.gym_img img {
+    width: 300px;
+    object-fit: cover;
+    left: 10px;
   }
   .browsebystyle {
+    margin-left: 1rem;
+    width: 500px;
+  }
+  .browsebystyle p {
+    font-size: 30px;
+    margin-left: 50px;
+    text-align: left;
+    width: 400px;
+  }
+  .uptodate {
+    margin-left: 1px;
+    max-width: 70%;
+  }
+  .uptodate .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+  .uptodate .grid-container .grdate_1 {
+    font-size: 10px;
+    line-height: 15px;
+    height: 120px;
+    margin-left: 35px;
+  }
+  .uptodate .grid-container .grdate_2 {
+    margin-top: 5px;
+  }
+  .uptodate .grid-container .grdate_2 .box input.form-control {
+    width: 200px;
+  }
+  .uptodate .grid-container .grdate_2 .box input::placeholder {
+    font-size: 10px;
+  }
+  .uptodate .grid-container .grdate_2 .box button {
+    width: 200px;
+    font-size: 10px;
+  }
+  .navbar .container-fluid {
     width: 100%;
+    display: flex;
+  }
+  .footer_grid .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 5px;
+    column-gap: 1px;
+  }
+  .footer_grid p#first_column {
+    font-size: 20px;
+  }
+  .footer_grid #first_column_subheading {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .footer_grid p strong {
+    margin-left: 35px;
+  }
+  .footer_grid .subs {
+    margin-left: 35px;
+    font-size: 10px;
+  }
+  footer {
+    background-color: #f2f0f1;
+    font-size: 10px;
+    margin-left: 2px;
+    padding-left: 2px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+  }
+  footer p.trademarks {
+    margin-left: 12px;
+    padding-top: 10px;
+  }
+  footer p.brands {
+    margin-left: 30px;
+  }
+  footer p.brands i.fa-brands {
+    font-size: 15px;
+    padding-top: 0px;
+  }
+  .cart_info p.chead {
+    margin-left: 55px;
+  }
+  .cart_info h1 {
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .cart_info .main_cart_info {
+    display: block;
+    grid-template-columns: 300px 400px;
+    margin-left: 0px;
+  }
+  .cart_info .cart_products {
+    width: 450px;
+  }
+  .cart_info .cart_products i.fa-solid {
+    padding-left: 20px;
+    width: 5px;
+  }
+  .cart_info .order_summary {
+    margin-left: 3rem;
+    width: 350px;
+  }
+  .cart_info .order_summary p.order_head {
+    font-size: 18px;
+  }
+  .cart_info .order_summary p.subtotal {
+    font-size: 15px;
+  }
+  .cart_info .order_summary p.total {
+    font-size: 18px;
+  }
+  .cart_info .order_summary p.buttons input {
+    width: 200px;
+  }
+  .cart_info .order_summary p.buttons i.fa-solid {
+    margin-left: 10px;
+  }
+  .cart_info .order_summary p.buttons ::placeholder {
+    text-align: center;
+    margin-left: 15px;
+  }
+  .cart_info .order_summary p.checkout button.checkout {
+    width: 280px;
+  }
+  .categories {
+    margin-left: 2px;
+  }
+  .categories .heading_direction .category_head {
+    margin-left: 20px;
+    font-size: 11px;
+  }
+  .categories .heading_direction .category_head_next {
+    font-size: 11px;
+  }
+  .categories .maincontent {
+    margin-left: 15px;
+  }
+  .categories .maincontent .filters {
+    width: 130px;
+    height: fit-content;
+  }
+  .categories .maincontent .filters .colors {
+    display: grid;
+    grid-template-columns: 20px 20px;
+  }
+  .categories .maincontent .filters .sizes_filter {
+    display: grid;
+    grid-template-columns: 20px;
+    padding-left: 10px;
+  }
+  .categories .maincontent .filters button.btn_apply {
+    width: 110px;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .categories .maincontent .filters input.min {
+    width: 100px;
+  }
+  .categories .maincontent .filters p.section_heading {
+    font-size: 14px;
+  }
+  .categories .maincontent .filters p.section_heading_first {
+    font-size: 14px;
+  }
+  .categories .maincontent .diff_clothes {
+    margin-left: 30px;
+  }
+  .categories .maincontent .diff_clothes .toptext {
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+  }
+  .categories .maincontent .diff_clothes .toptext p.pro_head {
+    font-size: 15px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+  }
+  .categories .maincontent .diff_clothes .toptext p.showing {
+    margin-left: 0.5px;
+    float: left;
+    position: absolute;
+  }
+  .categories .maincontent .diff_clothes .toptext p.mp {
+    position: absolute;
+    padding-top: 40px;
+    margin-left: 80px;
+  }
+  .categories .maincontent .diff_clothes .toptext p.sort {
+    position: absolute;
+    padding-top: 40px;
+  }
+  .categories .maincontent .diff_clothes .products {
+    display: block;
+  }
+  .categories .maincontent .diff_clothes .products img {
+    width: 180px;
+    height: 200px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figure {
+    display: flex;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption {
+    padding-bottom: 10px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption p.p_name {
+    font-size: 14px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption p.p_price {
+    font-size: 15px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption p.fa {
+    font-size: 11px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption s {
+    font-size: 10px;
+  }
+  .categories .maincontent .diff_clothes .products .products_images figcaption label {
+    font-size: 10px;
+  }
+  .categories .maincontent .diff_clothes .pages {
+    display: flex;
+    justify-content: start;
+    align-content: left;
+  }
+  .categories .maincontent .diff_clothes .pages button.previous {
+    width: 80px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .categories .maincontent .diff_clothes .pages button.next {
+    width: 80px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .categories .maincontent .diff_clothes .pages button.page_number {
+    text-align: center;
+    margin-left: 2px;
+    font-size: 14px;
+    width: 18px;
+  }
+  .clothes {
+    height: max-content;
+  }
+  .clothes p.hsmt {
+    padding-left: 20px;
+  }
+  .clothes .clothes_info {
+    display: grid;
+    grid-template-columns: 130px 200px;
+    margin-left: 20px;
+    display: grid;
+  }
+  .clothes .clothes_info .smaller_image figure.tshirt_img img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 150px;
+  }
+  .clothes .clothes_info .bigger_image figure.big_tshirt img {
+    width: 300px;
+    height: 485px;
+    border-radius: 10px;
+  }
+  .clothes .clothes_info .image_details {
+    width: 400px;
+  }
+  .clothes .clothes_info .image_details p.fa {
+    padding-top: 1px;
+    font-size: 10px;
+  }
+  .clothes .clothes_info .image_details p.fa em {
+    font-size: 10px;
+  }
+  .clothes .clothes_info .image_details p.shirt_title {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .clothes .clothes_info .image_details p.price_shirt {
+    font-size: 20px;
+  }
+  .clothes .clothes_info .image_details p.price_shirt label {
+    font-size: 10px;
+  }
+  .clothes .clothes_info .image_details p.subhead_shirt {
+    font-size: 13px;
+  }
+  .clothes .clothes_info .image_details .colors .olive {
+    width: 24px;
+    height: 24px;
+  }
+  .clothes .clothes_info .image_details .colors .green {
+    width: 24px;
+    height: 24px;
+  }
+  .clothes .clothes_info .image_details .colors .blue {
+    width: 24px;
+    height: 24px;
+  }
+  .clothes .clothes_info button.sizes {
+    width: 20%;
+    font-size: 10px;
+  }
+  .clothes .clothes_info .addmore_cart button.addmore {
+    width: 50%;
+    font-size: 12px;
+  }
+  .clothes .clothes_info .addmore_cart button.cart {
+    font-size: 10px;
+    text-align: center;
+  }
+  .product_ratings_faq .heading_tabs p {
+    font-size: 15px;
+  }
+  .product_ratings_faq .sub_heading {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 20px 280px;
+    column-gap: 1px;
+  }
+  .product_ratings_faq .sub_heading i.fa-solid {
+    margin-left: 0px;
+    font-size: 15px;
+  }
+  .product_ratings_faq .sub_heading button.btn {
+    width: 30%;
+  }
+  .product_ratings_faq .sub_heading button.review_btn {
+    width: 50%;
+    font-size: 14px;
+  }
+  .product_ratings_faq .sub_heading .sub_heading_small p.review_heading {
+    font-size: 15px;
+  }
+  .product_ratings_faq .reviews {
+    display: grid;
+    grid-template-columns: 300px;
+    gap: 10px;
+  }
+  .product_ratings_faq .reviews p.customer_name {
+    font-size: 17px;
+  }
+  .product_ratings_faq .reviews p.customer_review {
+    font-size: 13px;
+  }
+  .product_ratings_faq .reviews p.dateofreview {
+    font-size: 14px;
+  }
+  .product_ratings_faq button.more {
+    margin-left: 20%;
+    font-size: 12px;
+    width: 50%;
+  }
+  .youmightlike {
+    margin-left: 20px;
+  }
+  .youmightlike p.heading {
+    font-size: 20px;
+  }
+  .youmightlike .moreclothesimages {
+    margin-left: 5px;
+  }
+  .youmightlike .moreclothesimages img {
+    margin-left: 5px;
+    width: 200px;
+  }
+  .youmightlike .moreclothesimages figure {
+    margin-left: 5px;
+  }
+  .youmightlike .moreclothesimages figcaption {
+    margin-left: 5px;
+    width: 200px;
+    font-size: 14px;
   }
 }
 
